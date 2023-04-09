@@ -1568,9 +1568,9 @@ $error_msg"""
         val dmp = diff_match_patch()
         //      LinkedList<diff_match_patch.Diff> diff = dmp.diff_main("Hello World.", "Goodbye World.");
         val bytes1 =
-            File("/Users/shmuel/AndroidStudioProjects/SeforimCatalog/lemmas.txt").readText()
+            File("path1").readText()
         val bytes2 =
-            File("/Users/shmuel/AndroidStudioProjects/SeforimCatalog/lemmas_cache.txt").readText()
+            File("path2").readText()
         val diff = dmp.diff_main(bytes1, bytes2)
         // Result: [(-1, "Hell"), (1, "G"), (0, "o"), (1, "odbye"), (0, " World.")]
 //        dmp.diff_cleanupSemantic(diff)
